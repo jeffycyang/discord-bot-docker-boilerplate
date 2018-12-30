@@ -4,7 +4,7 @@ const auth = require('./auth.json')
 // Initialize Discord Bot:
 const bot = new Discord.Client({ token: auth.token, autorun: true })
 
-bot.on('ready', evt => console.log(`Logged in as: ${bot.username} - (${bot.id}`))
+bot.on('ready', evt => console.log(`Logged in as: ${bot.username} - (${bot.id})`))
 
 // Note: async callback onMessage for async APIs
 bot.on('message', async (user, userID, channelID, message, evt) => {
