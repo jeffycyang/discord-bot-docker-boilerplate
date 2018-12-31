@@ -8,3 +8,5 @@ for d in */; do
   echo "\033[1mDiscord Bot %d\033[0m"
   (cd "$d" && npm link discord.io && NODE_ENV=production pm2 start index.js --no-daemon)
 done
+
+pm2 logs

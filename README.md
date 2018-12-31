@@ -11,3 +11,5 @@ Have Docker installed, then run
 ```
 docker build -t discord-bots . && docker run -d discord-bots
 ```
+
+Note: if you're getting the error `executable file not found in $PATH`, you may need to make `start` executable with `chmod +x start`
