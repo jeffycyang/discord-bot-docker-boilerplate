@@ -2,10 +2,12 @@ FROM node:8.9
 
 RUN npm install pm2 -g
 
-COPY src/ /usr/local/src/discord-bot/
+RUN npm install https://github.com/woor/discord.io/tarball/gateway_v6 -g
 
-WORKDIR /usr/local/src/discord-bot
+COPY start /usr/local/bin
 
-RUN npm install
+COPY src/ /usr/local/src/bots/
 
-ENTRYPOINT [ "/usr/bin/npm", "run", "start" ]
+WORKDIR /usr/local/src/bots
+
+ENTRYPOINT [ "start" ]

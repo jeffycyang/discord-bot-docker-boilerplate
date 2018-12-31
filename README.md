@@ -1,13 +1,13 @@
 # Docker Discord bot boilerplate
 
-Bare-bones boilerplate for a Node.js Discord bot with Docker - responds with a ping/pong
+Bare-bones boilerplate for running multiple Node.js Discord bots with Docker
 
 ## Getting Started
 
-Replace `YOUR_DISCORD_BOT_TOKEN` with, well, your discord bot token in `src/auth.json` ([guide](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token))
+Replace `DISCORD_BOT_#_TOKEN` with the respective discord bot token in `auth.json` within each bots directory in `src` ([Creating a Discord Bot & Getting a Token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token))
 
 Have Docker installed, then run
 
 ```
-docker build -t discord-bot . && docker run -d discord-bot
+docker build -t discord-bots . && docker run -d discord-bots
 ```
