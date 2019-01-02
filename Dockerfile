@@ -10,6 +10,6 @@ COPY start /usr/local/bin
 
 COPY src/ /usr/local/src/bots/
 
-WORKDIR /usr/local/src/bots
+# WORKDIR /usr/local/src/bots
 
 ENTRYPOINT [ "start" ]

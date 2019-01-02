@@ -1,6 +1,6 @@
 # Docker Discord bot boilerplate
 
-Bare-bones boilerplate for running multiple Node.js Discord bots with Docker
+Bare-bones boilerplate for running multiple Node.js Discord bots in a single Docker container
 
 ## Getting Started
 
@@ -12,4 +12,6 @@ Have Docker installed, then run
 docker build -t discord-bots . && docker run -d discord-bots
 ```
 
-Note: if you're getting the error `executable file not found in $PATH`, you may need to make `start` executable with `chmod +x start`
+Add additional bots by creating a directory in `src` like the example for `bot1` and `bot2`
+
+If you're getting the error `executable file not found in $PATH`, you may need to make `start` executable with `chmod +x start`
