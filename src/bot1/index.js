@@ -1,7 +1,6 @@
 const Discord = require('discord.io')
 const auth = require('./auth.json')
 
-// Initialize Discord Bot:
 const bot = new Discord.Client({ token: auth.token, autorun: true })
 
 bot.on('ready', evt => console.log(`Logged in as: ${bot.username} - (${bot.id})`))
